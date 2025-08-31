@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fly Better – The Emirates Journey</title>
+  <meta name="description" content="A modern, simplified landing page for the comic ‘Fly Better – The Emirates Journey’, available exclusively on Amazon Kindle (digital)." />
+  <style>
+    body {margin:0; font-family: system-ui, sans-serif; line-height:1.6; color:#0f172a; background:#fff;}
+    header, footer {border-bottom:1px solid #e2e8f0;}
+    header {position:sticky; top:0; background:#fff; z-index:10;}
+    .container {max-width:900px; margin:0 auto; padding:20px;}
+    .brand {font-weight:bold; font-size:18px; display:flex; align-items:center; gap:8px;}
+    .cta {display:inline-block; padding:10px 16px; border-radius:999px; background:#0f172a; color:#fff; text-decoration:none;}
+    .hero {display:grid; gap:24px; padding:40px 0;}
+    .hero img {width:100%; border-radius:12px; border:1px solid #e2e8f0;}
+    h1 {font-size:32px; margin:0 0 10px;}
+    p {margin:0 0 14px;}
+    h2 {margin-top:0;}
+    .grid {display:grid; gap:16px;}
+    @media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .feature {border:1px solid #e2e8f0; border-radius:12px; padding:16px; background:#fff;}
+    .banner {border:1px solid #e2e8f0; border-radius:12px; padding:20px; margin:30px 0; display:flex; flex-direction:column; gap:12px;}
+    footer {font-size:14px; color:#475569; padding:20px 0; border-top:1px solid #e2e8f0;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+      <div class="brand">?? Fly Better — The Emirates Journey</div>
+      <a class="cta" href="https://www.amazon.com/dp/B0FP9Y2JNW" target="_blank">Read on Kindle</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <h1>Fly Better — The Emirates Journey</h1>
+        <p>From two planes in 1985 to the world’s largest fleet of A380s and Boeing 777s, Emirates has redefined modern air travel.</p>
+        <a class="cta" href="https://www.amazon.com/dp/B0FP9Y2JNW" target="_blank">Buy / Read on Kindle</a>
+      </div>
+      <div>
+        <img src="fly-better.png" alt="Fly Better – The Emirates Journey comic cover" />
+      </div>
+    </section>
+
+    <section style="background:#f8fafc;">
+      <div class="container" style="padding:30px 20px;">
+        <h2>About the Comic</h2>
+        <p>This richly illustrated comic brings to life the incredible story of Emirates’ rise — narrated by Veronica, who guides readers through four decades of milestones. From the airline’s humble beginnings at Dubai International Airport to bold bets on the A380, record-breaking aircraft orders, global partnerships, and futuristic visions at Al Maktoum International Airport, every chapter captures the spirit of ambition and innovation.</p>
+        <p><strong>Format:</strong> 20 pages of dynamic two-panel storytelling.<br><strong>Availability:</strong> <em>Exclusively on Amazon Kindle (digital).</em></p>
+      </div>
+    </section>
+
+    <section class="container" style="padding:30px 20px;">
+      <h2>What you’ll experience</h2>
+      <div class="grid">
+        <div class="feature"><h3>First Flight, 1985</h3><p>The first Emirates flight to Karachi in 1985.</p></div>
+        <div class="feature"><h3>Industry Firsts</h3><p>Seatback entertainment, inflight phones, and luxury A380 lounges.</p></div>
+        <div class="feature"><h3>Six Continents</h3><p>Global expansion from New York to São Paulo to Santiago.</p></div>
+        <div class="feature"><h3>Awards &amp; Honors</h3><p>Including “World’s Best Airline”.</p></div>
+        <div class="feature"><h3>Challenges &amp; Triumphs</h3><p>From the Gulf War to the COVID-19 pandemic.</p></div>
+        <div class="feature"><h3>Future Focus</h3><p>Sustainable aviation fuel, next-gen fleets, and a mega-hub at Al Maktoum.</p></div>
+      </div>
+    </section>
+
+    <section class="container banner">
+      <div>
+        <h2>Board the journey and fly better.</h2>
+        <p>Blending history and art, it’s a visual celebration of Dubai’s vision, Emirates innovation, and the people who shaped one of aviation’s greatest success stories.</p>
+      </div>
+      <a class="cta" href="https://www.amazon.com/dp/B0FP9Y2JNW" target="_blank">Get the Kindle Edition</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px;">
+      <div>© <span id="year"></span> Fly Better — The Emirates Journey. All rights reserved.</div>
+      <div><a href="https://www.amazon.com/dp/B0FP9Y2JNW" target="_blank">Available exclusively on Amazon Kindle</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
